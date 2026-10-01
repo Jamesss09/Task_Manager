@@ -1,0 +1,71 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.app__card {
+  width: 100%;
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 30px 80px -40px rgba(0, 0, 0, 0.9);
+}
+
+/* The login/register screen is deliberately narrower and more compact. */
+.app__card--auth {
+  max-width: 360px;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+/* And centred, since there is no long task list to anchor the top. */
+.app--auth {
+  align-items: center;
+}
+
+.app__loading--auth {
+  padding: 0.5rem 0;
+}
+
+.app__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.app__title {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.app__subtitle {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.app__loading {
+  margin: 0;
+  padding: 2rem 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+@media (max-width: 640px) {
+  .app {
+    padding: 1rem;
+  }
+
+  .app__card {
+    padding: 1.25rem;
+  }
+}

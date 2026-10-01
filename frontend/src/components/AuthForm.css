@@ -1,0 +1,79 @@
+.auth {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.auth__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.auth__title {
+  margin: 0;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+}
+
+.auth__subtitle {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.auth__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.auth__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.auth__field input {
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(9, 9, 11, 0.5);
+  color: inherit;
+  font: inherit;
+  font-size: 0.9rem;
+}
+
+.auth__field input:focus {
+  outline: 2px solid #646cff;
+  outline-offset: 1px;
+}
+
+.auth__submit {
+  margin-top: 0.2rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.auth__switch {
+  margin: 0;
+  font-size: 0.8rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.auth__switch-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  color: #a5b4fc;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.auth__switch-button:hover {
+  color: #c7d2fe;
+}
