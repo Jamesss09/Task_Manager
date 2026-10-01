@@ -41,7 +41,6 @@ services:
       # Changing it later logs every user out.
       - key: JWT_SECRET
         generateValue: true
-      # Optional. Set this to your Vercel URL to lock down CORS.
-      # Leave it unset to allow any origin.
-      - key: CLIENT_ORIGIN
-        sync: false
+    # Optional: add CLIENT_ORIGIN in the Render dashboard once your frontend is
+    # deployed, set to its URL, to lock down CORS. Without it, any origin can
+    # call the API.
